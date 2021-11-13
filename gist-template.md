@@ -1,6 +1,6 @@
-# Title (replace with your title)
+# Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+I have created this tutorial to help teach you how to read and write Regex(Regular Expression). You can include Regex in your code and search algorithms to find certain patterns of characters within a string. This is a great way to validate input data.
 
 ## Summary
 
