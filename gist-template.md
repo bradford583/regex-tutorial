@@ -4,7 +4,13 @@ I have created this tutorial to help teach you how to read and write Regex(Regul
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+A Regex is a sequence of characters that define a search pattern. These patterns are used by searching algorithms for find or find and replace operations on strings.
+
+Example :  Regex for an email address :
+```
+^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$
+```
+
 
 ## Table of Contents
 
@@ -23,6 +29,8 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+
+- `^abc$`
 
 ### Quantifiers
 
