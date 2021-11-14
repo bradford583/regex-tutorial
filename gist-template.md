@@ -30,9 +30,16 @@ Example :  Regex for an email address :
 
 ### Anchors
 
-- `^abc$`
+* `^exampletext$`
+    * The caret `^`  markes the start of the Regex.
+    * The dollar sign `$`  markes the end of the Regex.
 
 ### Quantifiers
+
+A quantifier is a repition operator. They let the system know to match the preceding code a certain number of times.
+
+The `+` will match one or more of the preceding token. In the case it will attempt to match `[a-zA-Z0-9_\-\.]`
+
 
 ### OR Operator
 
