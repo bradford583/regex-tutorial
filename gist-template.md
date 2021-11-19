@@ -7,9 +7,7 @@ I have created this tutorial to help teach you how to read and write Regex(Regul
 A Regex is a sequence of characters that define a search pattern. These patterns are used by searching algorithms for find or find and replace operations on strings.
 
 Example :  Regex for an email address :
-```
-^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$
-```
+`^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$`
 
 
 ## Table of Contents
@@ -43,17 +41,47 @@ The `+` will match one or more of the preceding token. In the case it will attem
 
 ### OR Operator
 
+The `|` is an alternation. It will match the former or latter expression. This quantifier can affect specific characters or a whole expression.  
+
 ### Character Classes
+
+A charcter class will match one of several characters. The order does not affect it. A character set will match any single character in the set. Anything in the square brackets will be matched.
 
 ### Flags
 
+Flags follow the closing forward slashof an expression and change how it is interpreted.
+
+Here are some examples:
+* `i` Ignore Case - This will make the expression case sensitive.
+* `g` Global Search - This will store the index of the last match.
+* `m` Multi-line - The will case the beginning and end anchore to match the start and end of a line instead of the whole string.
+* `u` Unicode - This will allow extended unicode escapes in the form \x{FFFFF}.
+* `y` Sticky - This will match from its last index position and ignores the global search flag.
+* `s` Dotall - This will cause dot to match any charcter.
+
+
 ### Grouping and Capturing
+
+Groups let a group of tokens to be combined to operate on them together.
+
+`^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$`
+
+Capturing group `(abc)` puts multiple tokens together for extracting a substring. Our example has 3 groups `([a-zA-Z0-9_\-\.]+)`, `([a-zA-Z0-9_\-\.]+)` and `([a-zA-Z]{2,5})`.
+
 
 ### Bracket Expressions
 
+A bracket expression will match a specific set of single charcter. It match a specific set of multi-character collating elements, based on the non-empty set of list expressions contained in the bracket expression.
+
 ### Greedy and Lazy Match
 
+A greedy quantifier will match as many characters it can as it goes backwards through the string. This is the default.
+
+A lazy quantifier will match as little characters as possible as it goes backwards through the string.
+
 ### Boundaries
+
+A Boundary is  a position between `\w` and `\W` to define a word character.
 
 ### Back-references
 
