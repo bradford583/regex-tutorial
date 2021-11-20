@@ -85,8 +85,20 @@ A Boundary is  a position between `\w` and `\W` to define a word character.
 
 ### Back-references
 
+The backreference `\` allows a previously matched subexpression to be identified subsequently in the same regular expression. 
+
 ### Look-ahead and Look-behind
+
+`(?=check)` Positive Lookahead-This asserts what immediately follows the current position in the string is check
+
+`(?<=check)` Positive Lookbehind-This asserts that what immediately precedes the current position in the string is check
+
+`(?!check)` Negative Lookahead-This assers that what immediately follows the current position in the string is not check
+
+`(?<!check)` Negative Lookbehind-This asserts that what immediately preceds the current position in the string is not check
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Chris Bradford is a student in the Full Stack Web Development pregram at the University of Utah. 
+
+Github: https://github.com/bradford583
